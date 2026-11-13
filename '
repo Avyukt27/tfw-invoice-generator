@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">Invoice Generator</div>
+      <form id="invoice-form">
+        <input type="text" placeholder="Item Name" required />
+        <input type="number" min="0" step="1" placeholder="Qty." required />
+        <input type="number" min="0" step="1" placeholder="Price" required />
+        <div class="break"></div>
+        <button type="button">+ Add Item</button>
+        <button type="submit">Generate Invoice</button>
+      </form>
+      <div class="total">Grand Total: ₹</div>
+      <div class="invoice"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
