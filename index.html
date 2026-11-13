@@ -11,14 +11,31 @@
       <div class="heading">Invoice Generator</div>
       <form id="invoice-form">
         <input type="text" placeholder="Item Name" required />
-        <input type="number" min="0" step="1" placeholder="Qty." required />
+        <input type="number" min="0" step="1" placeholder="Qty" required />
         <input type="number" min="0" step="1" placeholder="Price" required />
         <div class="break"></div>
         <button type="button">+ Add Item</button>
         <button type="submit">Generate Invoice</button>
       </form>
       <div class="total">Grand Total: ₹</div>
-      <div class="invoice"></div>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Item 1</th>
+            <td>10</td>
+            <td>200</td>
+            <td>2000</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="script.js"></script>

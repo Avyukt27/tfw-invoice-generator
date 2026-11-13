@@ -45,3 +45,29 @@ body {
   border: 2px #00000080 solid;
   border-radius: 0px;
 }
+
+.total {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+}
+th,
+td {
+  padding: 10px 14px;
+  text-align: left;
+  border: 1px solid #d1d5db;
+}
+thead th {
+  background-color: #e5e7eb;
+  color: #000000;
+  font-weight: bold;
+}
+tbody th,
+tbody td {
+  font-weight: normal;
+  color: #1f2937;
+}
