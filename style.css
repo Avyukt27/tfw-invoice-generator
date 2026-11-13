@@ -67,8 +67,28 @@ thead th {
   background-color: #e5e7eb;
   color: #000000;
   font-weight: bold;
+  text-align: center;
 }
 tbody td {
   font-weight: normal;
   color: #1f2937;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000;
+  }
+
+  #invoice-form,
+  .no-print,
+  button {
+    display: none !important;
+  }
+
+  .main {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+  }
 }

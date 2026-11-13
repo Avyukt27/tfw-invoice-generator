@@ -7,10 +7,10 @@ const grandTotalLabel = document.querySelector(".total");
 
 function renderTable() {
   invoiceBody.innerHTML = "";
-  let grandTotal = 0.0;
+  let subtotal = 0.0;
 
   state.forEach((entry) => {
-    grandTotal += entry.total;
+    subtotal += entry.total;
 
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -23,6 +23,7 @@ function renderTable() {
     invoiceBody.appendChild(row);
   });
 
+  const grandTotal = subtotal * 1.18;
   grandTotalLabel.textContent = `Grand Total: ₹${grandTotal.toFixed(2)}`;
 }
 
